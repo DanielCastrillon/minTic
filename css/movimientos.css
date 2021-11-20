@@ -5,3 +5,43 @@
     display: grid;
     justify-content: center;
 }
+
+#tab1{
+    width: 45%;
+    text-align: center;  
+    caption-side: initial;
+    border-radius: 10px;
+    margin-left: 20px;
+    float: left;
+    border-spacing: 5px;
+    border-collapse: separate;
+    margin-top: 3%;
+
+}
+
+#tab2{
+    width: 45%;
+    text-align: center;
+    caption-side: initial;
+    border-radius: 10px;
+    margin-right: 20px;
+    float: right;
+    border-spacing: 5px;
+    border-collapse: separate;
+    margin-top: 3%;
+}
+.table_data{
+    border: 1px solid grey;
+    border-radius: 10px;
+    border-spacing: 5px;
+    border-collapse: separate;
+    background: lightgray;
+} 
+.title1, .title2{
+    text-align: center;
+    background: lightblue;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
