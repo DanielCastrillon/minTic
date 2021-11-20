@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let operaciones=[];
 let balance=0;
 
@@ -15,10 +14,27 @@ const registrarOperacion=(monto,tipo,categoria,fecha)=>{
 const registrarMetaAhorro=(meta)=>{}
 const estaMiMetaCumplida=()=>{}
 
-module.exports.registrarMetaAhorro=registrarMetaAhorro;
-module.exports.estaMiMetaCumplida=estaMiMetaCumplida;
-module.exports.registrarOperacion=registrarOperacion;
-=======
+
+//FUNCION
+//var operaciones = [];
+//var balance = 0;
+
+function registrarOperacion(monto, tipo, categoria, fecha) {
+    //OBJETO
+    let objeto1 = {
+        ingresodemonto: monto,
+        ingresodetipo: tipo,
+        ingresodecategoria: categoria,
+        ingresodefecha: fecha
+    }
+    //METER EL OBJETO EN EL ARRAY
+    operaciones.push(objeto1)
+
+    //CONDICIONAL SI ES IGUAL A INGRESO SUME DE LO CONTRARIO RESTE
+    if (tipo == 'Ingreso') {
+        balance = balance+monto;
+    }else{
+        balance
 let operaciones = [];
 let balance = 0;
 function parametros(params) {
@@ -52,4 +68,6 @@ const registrarMetaAhorro=(meta)=>{
 const estaMiMetaCumplida=()=>{
 
 }
->>>>>>> 4a5526c28d7734dfc46cdeb92b2097aa7543571a
+module.exports.registrarMetaAhorro=registrarMetaAhorro;
+module.exports.estaMiMetaCumplida=estaMiMetaCumplida;
+module.exports.registrarOperacion=registrarOperacion;
