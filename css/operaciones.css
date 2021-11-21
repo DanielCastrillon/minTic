@@ -2,51 +2,94 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* font-size: 13px; */
+  /* font-size: 20px; */
 }
-nav{
+/* header */
+header{
+	display: block;
+    padding-top: 20px;
+    /* border: solid #5B6DCD 2px; */
+}
+#Gastos-Personales{
+    float:left;
+    vertical-align: middle;
+    height:50%;
+    width:13.5%;
+    /* border: solid #5B6DCD 2px; */
+}
+#Lion{
+    float:right;
+    vertical-align: middle;
+    height:10%;
+    width:4.8%;
+    /* border: solid #5B6DCD 2px; */
+
+/* nav  */
+}.Item-List{
+    padding-top: 18px;
     width: 100%;
-    height: 100px;
-    border-bottom: 2px solid black;
+    /* border: solid chartreuse 2px; */
 }
-figure img{
-    width: 100px;
-    height: auto;
+/* .nav li{
+    list-style-type: none;
+    display: inline;
+} */
+.nav li{
+    position: relative;
+    text-align:center; 
+    /* box-sizing: border-box; */
+    width: 20%;
+    padding: 0px 0px 0px px ;
+    margin: 0px;
+    /* border: solid blue 2px; */
 }
 .nav a{
-    color: #000;
+    font-size:15px; 
+    position: relative;
+    vertical-align: middle;
+    text-align:center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 12px;
+    /* border: solid brown 2px; */
 }
 .nav a:hover{
     background-color: black;
     color: white;
 }
+
+.btn-light{
+    background-color: rgb(219, 218, 218) ;
+}
+/* aside */
 aside{
-	float: left;
-	width: 200px;
+    float:left;
+    width: 200px;
     height: 100vh;
     background-color: #c4c4c4;
-    text-align: center;   	
+    text-align: center;   
+    /* border: solid brown 2px;     */
 }
+.list-group-item{
+    margin: .5px 0px .5px 0px;
+    border-radius: 12px 12px 12px 12px;
+    /* border: solid rgb(110, 42, 165) 2px;     */
+} 
 #Operaciones{
-	/* width: 200px;
-	padding: 2px;
-	margin: 1px 0px 1px 0px; */
+    margin: .5px 0px .5px 0px;
+    border-radius: 12px;
     background: rgb(156, 156, 156) ;
 }
-.content-buttom {
-	width: 200px;
-    height: 100vh;
-    font-size: 15px;
-}
-aside button{
-    margin: .5px 0 .5px 0;
+#Ingreso, #Gasto{
+    margin: .5px 0px .5px 0px;
     border-radius: 12px;
 }
-#seccion-principal {
-	padding: 10px;
-	display: grid;
+main{
+    padding: 10px;
+    display: grid;
 	grid-template-columns: auto 0px auto;
 	gap: 10px;
+    /* border: solid rgb(110, 42, 165) 2px;     */
 }
 .seccion{
 	padding-top: 10%;
@@ -56,6 +99,12 @@ aside button{
     min-width: 300px;
     margin-left: auto;
     margin-right: auto;
+    /* border: solid rgb(165, 56, 42) 2px;     */
+}
+form{
+    margin: 0 auto;
+    width:70%;
+    /* border: solid rgb(42, 165, 42) 2px;     */
 }
 .col-md-12 {
     margin-top: 10px;
@@ -88,16 +137,12 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-.form_btn_send {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 20px;
-}
+
 .form_btn {
+    margin: 20px;
 	height: 45px;
 	line-height: 45px;
-	width: 30%;
+	width: 60%;
 	background:darkgrey;
 	color: black;
 	/* font-weight: bold; */
@@ -105,7 +150,11 @@ input[type=number] {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: .1s ease all;
+    /* border: solid rgb(165, 56, 42) 2px;     */
 }
 .form_btn:hover {
+    background-color:black;
+    color:white;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
 }
+
