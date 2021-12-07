@@ -18,6 +18,7 @@
             ),
         }
     );
+    console.log(await response.text());
     return response.json();
 }
 const estaMimetaCumplida=async(meta)=> {
@@ -25,5 +26,7 @@ const estaMimetaCumplida=async(meta)=> {
         let estaMiMetaCumplida = await response.json();
         return response.json();
 }
+estaMimetaCumplida(2000);
+registrarOperacion(1000,"ingreso","salario","01/10/2016");
 module.exports.estaMiMetaCumplida=estaMimetaCumplida;
 module.exports.registrarOperacion=registrarOperacion;
