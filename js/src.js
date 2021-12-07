@@ -8,7 +8,6 @@ app.post('/api/personal-finance/operations', async (req, res)=>{
         res.json(operations);
 });
 app.get('/api/personal-finance/is-my-goal-achieved/:amount', (req,res)=>{
-        req.json(amount);
         amount=req.params
         amount=parseInt(amount);
         let result="no cumple";
